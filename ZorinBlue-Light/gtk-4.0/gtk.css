@@ -2510,3 +2510,15 @@ read if you used those and something break with a version upgrade you're on your
 @define-color popover_fg_color #123354;
 @define-color shade_color #e4e8ee;
 @define-color scrollbar_outline_color #e4e8ee;
+
+@define-color sidebar_bg_color #f5f7fa;
+@define-color sidebar_fg_color #123354;
+@define-color sidebar_backdrop_color #f8f8f8;
+@define-color sidebar_shade_color #e4e8ee;
+@define-color sidebar_border_color #e4e8ee;
+
+@define-color secondary_sidebar_bg_color #f5f7fa;
+@define-color secondary_sidebar_fg_color #123354;
+@define-color secondary_sidebar_backdrop_color #f8f8f8;
+@define-color secondary_sidebar_shade_color #e4e8ee;
+@define-color secondary_sidebar_border_color #e4e8ee;
