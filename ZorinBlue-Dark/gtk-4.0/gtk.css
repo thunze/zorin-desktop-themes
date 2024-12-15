@@ -835,7 +835,7 @@ popover.background > arrow, popover.background > contents { background-color: #1
 
 popover.background:backdrop { background-color: transparent; }
 
-popover.background > contents { padding: 8px; border-radius: 12px; }
+popover.background > contents { padding: 4px; /* 8px */ border-radius: 12px; }
 
 popover.background > contents > list, popover.background > contents > .view, popover.background > contents > iconview, popover.background > contents > .toolbar { border-style: none; background-color: transparent; }
 
@@ -862,7 +862,7 @@ popover.menu box.circular-buttons button.circular.image-button.model { padding: 
 
 popover.menu box.circular-buttons button.circular.image-button.model:focus { background-color: #354249; border-color: #354249; }
 
-popover.menu > arrow, popover.menu.background > contents { background-color: #171d20; padding: 6px; }
+popover.menu > arrow, popover.menu.background > contents { background-color: #171d20; padding: 4px; /* 6px */ }
 
 popover.menu.background separator { margin: 6px 0; }
 
@@ -876,7 +876,7 @@ popover.menu arrow.left, popover.menu radio.left, popover.menu check.left { marg
 
 popover.menu arrow.right, popover.menu radio.right, popover.menu check.right { margin-left: 6px; margin-right: -2px; }
 
-popover.menu modelbutton, popover.menu row { min-height: 30px; min-width: 40px; padding: 0 12px; border-radius: 8px; background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%); background-repeat: no-repeat; background-position: center; background-size: 1000% 1000%; }
+popover.menu modelbutton, popover.menu row { /* min-height: 30px; min-width: 40px; padding: 0 12px; */ border-radius: 8px; background-image: radial-gradient(circle farthest-corner at center, transparent 10%, transparent 0%); background-repeat: no-repeat; background-position: center; background-size: 1000% 1000%; }
 
 popover.menu modelbutton, popover.menu modelbutton label, popover.menu row, popover.menu row label { color: #bde6fb; }
 
