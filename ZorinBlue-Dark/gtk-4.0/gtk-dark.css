@@ -1306,6 +1306,67 @@ separator.spacer.horizontal { min-width: 12px; }
 
 separator.spacer.vertical { min-height: 12px; }
 
+/********* Lists * */
+listview, list { color: #bde6fb; /* background-color: #171d20; */ border-color: transparent; }
+
+listview:backdrop, list:backdrop { /* background-color: #14191a; */ color: #6f828a; border-color: transparent; }
+
+listview > row, list > row { padding: 2px; }
+
+listview > row.expander, list > row.expander { padding: 0px; }
+
+listview > row.expander .row-header, list > row.expander .row-header { padding: 2px; }
+
+listview.horizontal row.separator, listview.separators.horizontal > row:not(.separator), list.horizontal row.separator, list.separators.horizontal > row:not(.separator) { border-left: 1px solid #2a3439; }
+
+listview:not(.horizontal) row.separator, listview.separators:not(.horizontal) > row:not(.separator), list:not(.horizontal) row.separator, list.separators:not(.horizontal) > row:not(.separator) { border-bottom: 1px solid #2a3439; }
+
+listview:not(.horizontal) row.separator:last-child, listview.separators:not(.horizontal) > row:not(.separator):last-child, list:not(.horizontal) row.separator:last-child, list.separators:not(.horizontal) > row:not(.separator):last-child { border-bottom: none; }
+
+listview .view, listview iconview, list .view, list iconview { border-radius: 0; }
+
+row { transition-property: outline, outline-width, outline-offset, outline-color; transition-duration: 300ms; animation-timing-function: ease-in-out; }
+
+row { outline: 0 solid transparent; outline-offset: 4px; }
+
+row:focus:focus-visible { outline-color: #bde6fb; outline-width: 2px; outline-offset: -2px; }
+
+row:backdrop { transition: 150ms ease-out; }
+
+row.activatable { color: #bde6fb; }
+
+row.activatable:backdrop { color: #6f828a; }
+
+row.activatable.has-open-popup, row.activatable:hover { color: #bde6fb; background-color: #2a3439; background-image: none; box-shadow: none; color: #bde6fb; background-color: rgba(189, 230, 251, 0.075); }
+
+row.activatable.has-open-popup:backdrop, row.activatable:hover:backdrop { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; color: #6f828a; }
+
+row.activatable:active { color: #bde6fb; background-color: #323e44; background-image: none; box-shadow: 0 2px 8px rgba(23, 29, 32, 0.45); }
+
+row.activatable:selected { color: #171d20; background-color: #bde6fb; background: image(#bde6fb); box-shadow: 0 2px 8px rgba(189, 230, 251, 0.2); }
+
+row.activatable:selected label { color: #171d20; }
+
+row.activatable:selected:active { color: #171d20; background-color: #bde6fb; background: image(#bde6fb); box-shadow: none; }
+
+row.activatable:selected:backdrop, row.activatable:selected:backdrop:hover { color: #14191a; background-color: #7f96a1; background-image: none; box-shadow: none; }
+
+row:selected { outline-color: rgba(255, 255, 255, 0.3); }
+
+columnview > listview > row { padding: 0; }
+
+/* columnview > listview > row > cell { padding: 8px 6px; } */
+
+columnview > listview > row > cell:not(:first-child) { border-left: 1px solid transparent; }
+
+columnview.column-separators > listview > row > cell { border-left-color: #38454c; }
+
+columnview.data-table > listview > row > cell { padding-top: 2px; padding-bottom: 2px; }
+
+columnview .view, columnview iconview { border-radius: 0; }
+
+treeexpander { border-spacing: 4px; }
+
 /******************************************************** Data Tables                                          * treeview like tables with individual focusable cells * https://gitlab.gnome.org/GNOME/gtk/-/issues/2929     * */
 columnview row:not(:selected) cell editablelabel:not(.editing):focus-within { outline: 2px solid #bde6fb; }
 
