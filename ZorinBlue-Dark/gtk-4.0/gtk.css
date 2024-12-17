@@ -564,6 +564,39 @@ dropdown popover listview > row.activatable:selected, dropdown popover listview 
 
 dropdown popover .dropdown-searchbar, combobox popover .dropdown-searchbar { padding: 6px; border-bottom: 1px solid #2a3439; }
 
+/************ Toolbars * */
+/* searchbar > revealer > box, .toolbar { padding: 4px; border-spacing: 4px; background-color: #1e2529; } */
+
+/* searchbar > revealer > box:backdrop, .toolbar:backdrop { background-color: #1a2022; } */
+
+searchbar > revealer > box entry, .toolbar entry, searchbar > revealer > box spinbutton, .toolbar spinbutton, searchbar > revealer > box splitbutton, .toolbar splitbutton, searchbar > revealer > box separator:not(.sidebar), .toolbar separator:not(.sidebar), searchbar > revealer > box button, .toolbar button, searchbar > revealer > box menubutton, .toolbar menubutton, searchbar > revealer > box scalebutton, .toolbar scalebutton { margin-top: 6px; margin-bottom: 6px; }
+
+searchbar > revealer > box menubutton > button, .toolbar menubutton > button, searchbar > revealer > box splitbutton > button, .toolbar splitbutton > button, searchbar > revealer > box splitbutton > menubutton, .toolbar splitbutton > menubutton, searchbar > revealer > box scalebutton > button, .toolbar scalebutton > button { margin-top: 0px; margin-bottom: 0px; }
+
+searchbar > revealer > box switch, .toolbar switch { margin-top: 10px; margin-bottom: 10px; }
+
+searchbar > revealer > box popover entry, .toolbar popover entry, searchbar > revealer > box popover spinbutton, .toolbar popover spinbutton, searchbar > revealer > box popover splitbutton, .toolbar popover splitbutton, searchbar > revealer > box popover separator:not(.sidebar), .toolbar popover separator:not(.sidebar), searchbar > revealer > box popover button, .toolbar popover button, searchbar > revealer > box popover menubutton, .toolbar popover menubutton, searchbar > revealer > box popover scalebutton, .toolbar popover scalebutton, searchbar > revealer > box popover switch, .toolbar popover switch { margin-top: 0; margin-bottom: 0; }
+
+searchbar > revealer > box popover.menu separator:not(.sidebar), .toolbar popover.menu separator:not(.sidebar) { margin-top: 6px; margin-bottom: 6px; }
+
+.osd .toolbar { background-color: transparent; }
+
+.toolbar.osd { padding: 6px; border: none; border-radius: 12px; }
+
+.toolbar.osd.left, .toolbar.osd.right, .toolbar.osd.top, .toolbar.osd.bottom { border-radius: 0; }
+
+.toolbar.horizontal > separator { margin: 4px 0; }
+
+.toolbar.vertical > separator { margin: 0 4px; }
+
+searchbar > revealer > box { padding: 6px; border-spacing: 6px; box-shadow: none; border-width: 0 0 1px; }
+
+/* searchbar > revealer > box { border-style: none; background-color: #1e2529; } */
+
+/* searchbar > revealer > box:backdrop { background-color: #1a2022; } */
+
+searchbar > revealer > box:backdrop > * { filter: none; }
+
 /************** GtkInfoBar * */
 infobar > revealer > box { padding: 8px; border-spacing: 12px; }
 
